@@ -10,14 +10,19 @@ object Dependencies {
     object Versions {
 
         object Common {
-            const val packageName = "com.tweener.common.android"
+            const val packageName = "com.tweener.common"
             const val versionName = "1.0"
+            const val versionCode = 1
             const val applicationId = Common.packageName
             const val namespace = Common.packageName + ".android"
             const val compileSDK = 34
             const val targetSDK = compileSDK
             const val minSDK = 24
-            const val versionCode = 2
+        }
+
+        object Jitpack {
+            const val group = "com.github.Tweener"
+            const val artifactId = "common-android"
         }
 
         object Compiler {

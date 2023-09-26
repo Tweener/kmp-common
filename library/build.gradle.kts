@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("maven-publish")
 }
 
 android {
@@ -63,4 +64,18 @@ dependencies {
 
     // Napier
     implementation(Dependencies.Libraries.napier)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            register("release", MavenPublication::class) {
+                group = Dependencies.Versions.Jitpack.group
+                artifactId = Dependencies.Versions.Jitpack.artifactId
+                version = Dependencies.Versions.Common.versionName
+
+                from(components["release"])
+            }
+        }
+    }
 }
