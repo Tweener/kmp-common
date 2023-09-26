@@ -3,12 +3,7 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven {
-            val authToken: String by settings
-
-            setUrl("https://jitpack.io")
-            credentials { username = authToken }
-        }
+        maven { setUrl("https://jitpack.io") }
     }
 }
 
@@ -18,12 +13,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            val authToken: String by settings
-
-            setUrl("https://jitpack.io")
-            credentials { username = authToken }
-        }
+        maven { setUrl("https://jitpack.io") }
     }
 }
 
