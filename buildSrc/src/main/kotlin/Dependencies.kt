@@ -18,11 +18,11 @@ object Dependencies {
             const val compileSDK = 34
             const val targetSDK = compileSDK
             const val minSDK = 24
-        }
 
-        object Jitpack {
-            const val group = "com.github.Tweener"
-            const val artifactId = "common-android"
+            object Jitpack {
+                const val group = "com.github.Tweener"
+                const val artifactId = "common-android"
+            }
         }
 
         object Compiler {

@@ -49,8 +49,12 @@ dependencies {
 
     coreLibraryDesugaring(Dependencies.Libraries.desugarJdkLibs)
 
+    implementation(Dependencies.Libraries.napier)
+
     // Android
     implementation(Dependencies.Libraries.material3)
+
+    // Accompanist
     implementation(Dependencies.Libraries.Accompanist.systemUIController)
     implementation(Dependencies.Libraries.Accompanist.placeholder)
 
@@ -69,17 +73,14 @@ dependencies {
     // Coroutines
     implementation(Dependencies.Libraries.Coroutines.core)
     implementation(Dependencies.Libraries.Coroutines.android)
-
-    // Napier
-    implementation(Dependencies.Libraries.napier)
 }
 
 afterEvaluate {
     publishing {
         publications {
             register("release", MavenPublication::class) {
-                group = Dependencies.Versions.Jitpack.group
-                artifactId = Dependencies.Versions.Jitpack.artifactId
+                group = Dependencies.Versions.Common.Jitpack.group
+                artifactId = Dependencies.Versions.Common.Jitpack.artifactId
                 version = Dependencies.Versions.Common.versionName
 
                 from(components["release"])
