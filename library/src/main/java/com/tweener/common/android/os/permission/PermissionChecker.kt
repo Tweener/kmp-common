@@ -1,4 +1,4 @@
-package com.tweener.common.android.os.notification.permission
+package com.tweener.common.android.os.permission
 
 import android.content.Context
 import android.content.pm.PackageManager

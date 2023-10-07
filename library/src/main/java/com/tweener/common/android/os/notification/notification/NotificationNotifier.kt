@@ -5,7 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.tweener.common.android.os.notification.permission.PermissionChecker
+import com.tweener.common.android.os.permission.PermissionChecker
 import io.github.aakira.napier.Napier
 import kotlin.random.Random
 

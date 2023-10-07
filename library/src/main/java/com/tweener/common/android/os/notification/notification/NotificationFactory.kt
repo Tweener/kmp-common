@@ -32,6 +32,6 @@ class NotificationFactory {
                 .setStyle(NotificationCompat.BigTextStyle().bigText(content))
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setContentIntent(pendingIntent)
-                .setAutoCancel(true) // Automatically remove the notification when the user taps it
+                .setAutoCancel(autoCancel) // Automatically remove the notification when the user taps it
     }
 }
