@@ -26,8 +26,9 @@ abstract class AlarmScheduler(private val context: Context) {
         )
 
         val hourOfDayAlarm = calendar.get(Calendar.HOUR_OF_DAY)
+        val minutesAlarm = calendar.get(Calendar.MINUTE)
 
-        Napier.d { "Alarm set to display a new 'Quote of the Day' notification every day at $hourOfDayAlarm." }
+        Napier.d { "Alarm set to display a new 'Quote of the Day' notification every day at $hourOfDayAlarm:$minutesAlarm." }
     }
 
     fun cancel() {
