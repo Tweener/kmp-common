@@ -34,7 +34,6 @@ object Dependencies {
         const val gradle = "8.1.1"
         const val coroutines = "1.7.3"
         const val napier = "2.6.1"
-        const val kotlinxDatetime = "0.4.1"
         const val composeCompilerExtension = "1.5.3"
         const val compose = "1.5.1"
         const val activityCompose = "1.7.2"
@@ -55,7 +54,6 @@ object Dependencies {
     object Libraries {
 
         const val napier = "io.github.aakira:napier:${Versions.napier}"
-        const val kotlinXDatetime = "org.jetbrains.kotlinx:kotlinx-datetime:${Versions.kotlinxDatetime}"
         const val material3 = "androidx.compose.material3:material3:${Versions.material3}"
         const val desugarJdkLibs = "com.android.tools:desugar_jdk_libs:${Versions.desugarJdkLibs}"
 

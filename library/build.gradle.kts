@@ -50,7 +50,6 @@ dependencies {
     coreLibraryDesugaring(Dependencies.Libraries.desugarJdkLibs)
 
     implementation(Dependencies.Libraries.napier)
-    implementation(Dependencies.Libraries.kotlinXDatetime)
 
     // Android
     implementation(Dependencies.Libraries.material3)
