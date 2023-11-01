@@ -31,11 +31,11 @@ object Dependencies {
         }
 
         const val kotlin = "1.9.10"
-        const val gradle = "8.1.1"
+        const val gradle = "8.1.2"
         const val coroutines = "1.7.3"
         const val napier = "2.6.1"
         const val composeCompilerExtension = "1.5.3"
-        const val compose = "1.5.1"
+        const val compose = "1.6.0-alpha03"
         const val activityCompose = "1.7.2"
         const val navigationCompose = "2.7.2"
         const val material3 = "1.1.1"
