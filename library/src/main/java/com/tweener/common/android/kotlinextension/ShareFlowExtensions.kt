@@ -13,5 +13,9 @@ import kotlinx.coroutines.flow.SharedFlow
 @SuppressLint("ComposableNaming")
 @Composable
 inline fun <T> SharedFlow<T>.subscribe(crossinline action: (T) -> Unit) {
-    with(this) { LaunchedEffect(this) { this@with.collect { action.invoke(it) } } }
+    with(this) {
+        LaunchedEffect(this) {
+            this@with.collect { action.invoke(it) }
+        }
+    }
 }
