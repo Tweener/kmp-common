@@ -1,3 +1,10 @@
+import Dependencies.Libraries.Coroutines.android
+import Dependencies.Versions.Common.Jitpack.artifactId
+import Dependencies.Versions.Common.Jitpack.group
+import Dependencies.Versions.Common.namespace
+import Dependencies.Versions.Compiler.jvmTarget
+import Dependencies.Versions.compose
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -48,6 +55,8 @@ android {
 dependencies {
 
     coreLibraryDesugaring(Dependencies.Libraries.desugarJdkLibs)
+
+    implementation(Dependencies.Libraries.kotlinXDatetime)
 
     implementation(Dependencies.Libraries.napier)
 
