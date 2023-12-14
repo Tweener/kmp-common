@@ -22,7 +22,8 @@ class NotificationFactory {
             smallIcon: Int,
             largeIcon: Bitmap? = null,
             pendingIntent: PendingIntent? = null,
-            autoCancel: Boolean = true
+            autoCancel: Boolean = true,
+            actions: List<NotificationAction>? = null,
         ): NotificationCompat.Builder =
             NotificationCompat.Builder(context, channelId)
                 .setSmallIcon(smallIcon)
@@ -33,5 +34,10 @@ class NotificationFactory {
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(autoCancel) // Automatically remove the notification when the user taps it
+                .apply {
+                    actions?.let {
+                        it.forEach { action -> addAction(action.icon, action.title, action.pendingIntent) }
+                    }
+                }
     }
 }
