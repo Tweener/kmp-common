@@ -35,10 +35,6 @@ android {
         compose = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = Dependencies.Versions.composeCompilerExtension
-    }
-
     compileOptions {
         sourceCompatibility = Dependencies.Versions.Compiler.javaCompatibility
         targetCompatibility = Dependencies.Versions.Compiler.javaCompatibility
