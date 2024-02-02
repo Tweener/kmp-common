@@ -31,10 +31,6 @@ android {
         }
     }
 
-    buildFeatures {
-        compose = true
-    }
-
     compileOptions {
         sourceCompatibility = Dependencies.Versions.Compiler.javaCompatibility
         targetCompatibility = Dependencies.Versions.Compiler.javaCompatibility
