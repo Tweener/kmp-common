@@ -21,7 +21,7 @@ object Dependencies {
 
         object Common {
             const val packageName = "com.tweener.common"
-            const val versionName = "3.0.0"
+            const val versionName = "1.0.0"
             const val namespace = "$packageName.android"
             const val compileSDK = 34
             const val minSDK = 24
