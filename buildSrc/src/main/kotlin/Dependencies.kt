@@ -41,12 +41,16 @@ object Dependencies {
         object Android {
             const val desugarJdkLibs = "2.0.3"
 
+            object AndroidX {
+                const val core = "1.12.0"
+            }
         }
     }
 
     object Libraries {
 
         const val napier = "io.github.aakira:napier:${Versions.napier}"
+        const val annotations = "androidx.annotation:annotation:${Versions.annotations}"
 
         object Coroutines {
             const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
@@ -58,6 +62,10 @@ object Dependencies {
 
         object Android {
             const val desugarJdkLibs = "com.android.tools:desugar_jdk_libs:${Versions.Android.desugarJdkLibs}"
+
+            object AndroidX {
+                const val core = "androidx.core:core-ktx:${Versions.Android.AndroidX.core}"
+            }
         }
     }
 }
