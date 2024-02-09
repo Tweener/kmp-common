@@ -1,4 +1,4 @@
-package com.tweener.common.os.contract
+package com.tweener.common._internal.contract
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract
