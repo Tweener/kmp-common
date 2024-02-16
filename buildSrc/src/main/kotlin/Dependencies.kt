@@ -11,6 +11,7 @@ object Dependencies {
 
         const val kotlin = "1.9.21"
         const val gradle = "8.1.4"
+        const val dependencyVersionsPlugin = "0.51.0"
         const val nexusSonatype = "2.0.0-rc-1"
         const val dokka = "1.9.10"
         const val annotations = "1.7.1"
@@ -19,7 +20,7 @@ object Dependencies {
 
         object Common {
             const val packageName = "com.tweener.common"
-            const val versionName = "1.0.1"
+            const val versionName = "1.0.2"
             const val namespace = "$packageName.android"
             const val compileSDK = 34
             const val minSDK = 24
